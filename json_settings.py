@@ -13,5 +13,7 @@ def read_json():
         
         
 
-def write_json():
-    pass
+def write_json(new_data):
+    with open('videogames.json', 'w') as f:
+        json.dump(new_data, f)
+
