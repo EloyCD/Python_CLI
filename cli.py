@@ -43,6 +43,20 @@ def game(name):
     else:
         print(f"{game['name']} - {game['genre']} - {game['platform']} - {game['release_year']}")
 
+@cli.command()
+@click.argument('name') # argument don't need --, is the same that option.
+def delete(name):
+    videogames = json_settings.read_json()
+    # The function x for x in videogames, if the element that you are traversing with its property name == name that we are receiving, will give us the concrete videogame, otherwise it will give None.
+    game = next((x for x in videogames if x ['name'] == name ), None)# Next() is used to sequentially access each element of our list.
+    if game is None:
+        print(f"The game {name} was not found")
+    else:
+        videogames.remove(game) 
+        json_settings.write_json(videogames)
+        print(f"The game {name} has been deleted successfully")
+       
+
                                                                 
 if __name__ == '__main__':
     cli()
