@@ -1,1 +1,32 @@
-[{"name": "Tony Hawk Pro", "genre": "Sport", "platform": "PC", "release_year": "2015"}, {"name": "Batman Begin", "genre": "Adventure", "platform": "Xbox", "release_year": "2018"}, {"name": "Sims", "genre": "Roll", "platform": "PC", "release_year": "2020"}, {"name": "Fifa", "genre": "Sport", "platform": "PlayStation4", "release_year": "2020"}]
+[
+    {
+        "name": "Tony Hawk Pro",
+        "genre": "Sport",
+        "platform": "PC",
+        "release_year": "2015"
+    },
+    {
+        "name": "Batman Begin",
+        "genre": "Adventure",
+        "platform": "Xbox",
+        "release_year": "2018"
+    },
+    {
+        "name": "Sims",
+        "genre": "Roll",
+        "platform": "PC",
+        "release_year": "2020"
+    },
+    {
+        "name": "Fifa",
+        "genre": "Sport",
+        "platform": "PlayStation4",
+        "release_year": "2020"
+    },
+    {
+        "name": "Fifa",
+        "genre": "Sport",
+        "platform": "PlayStation4",
+        "release_year": "2020"
+    }
+]
