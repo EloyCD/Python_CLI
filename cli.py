@@ -44,6 +44,29 @@ def game(name):
         print(f"{game['name']} - {game['genre']} - {game['platform']} - {game['release_year']}")
 
 @cli.command()
+@click.argument('name')
+@click.option('--genre', help='game genre')
+@click.option('--platform', help='game platform')
+@click.option('--release_year', help='game release year')
+def update(name, genre, platform, release_year):
+    videogames = json_settings.read_json()
+    for game in videogames:
+        if game['name'] == name:
+            if name is not None:
+                game['name'] = name
+            if genre is not None:
+                game['genre'] = genre
+            if platform is not None:
+                game['platform'] = platform
+            if release_year is not None:
+                game['release_year'] = release_year
+            break
+    json_settings.write_json(videogames)
+    print(f"The game {name} was updated successfully")
+
+
+
+@cli.command()
 @click.argument('name') # argument don't need --, is the same that option.
 def delete(name):
     videogames = json_settings.read_json()

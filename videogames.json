@@ -1,1 +1,32 @@
-[{"name": "Tony Hawk Pro", "genre": "Sport", "platform": "PC", "release_year": "2015"}, {"name": "Batman Begin", "genre": "Adventure", "platform": "Xbox", "release_year": "2018"}, {"name": "Sims", "genre": "Roll", "platform": "PC", "release_year": "2020"}, {"name": "Fifa", "genre": "Sport", "platform": "PlayStation4", "release_year": "2020"}]
+[
+    {
+        "name": "The Legend of Zelda",
+        "genre": "Action-adventure",
+        "platform": "Nintendo Switch",
+        "release_year": 2017
+    },
+    {
+        "name": "Red Dead Redemption",
+        "genre": "Action-adventure",
+        "platform": "PlayStation 4, Xbox One",
+        "release_year": 2018
+    },
+    {
+        "name": "The Witcher 3",
+        "genre": "Action role-playing",
+        "platform": "PlayStation 4",
+        "release_year": 2015
+    },
+    {
+        "name": "Super Mario Odyssey",
+        "genre": "Platformer",
+        "platform": "Nintendo Switch",
+        "release_year": 2017
+    },
+    {
+        "name": "Grand Theft Auto V",
+        "genre": "Action-adventure",
+        "platform": "PlayStation 3",
+        "release_year": "2020"
+    }
+]
