@@ -8,7 +8,7 @@ def read_json():
             json.dump([], f) # It would be the object videogames.json and writes it to the file videogames.json
     with open('videogames.json', 'r') as f:
         videogames = json.load(f)
-        return videogames if isinstance(videogames, list) else []
+        return videogames if isinstance(videogames, list) else [] # Returns an empty list if videogames is not a list, and does nothing if videogames is a list.
         
         
 

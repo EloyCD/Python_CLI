@@ -1,11 +1,11 @@
-import click
+import click # Facilitates the creation of command line interfaces.
 import json_settings
 
 @click.group()
 def cli():
     pass
 
-@cli.command()
+@cli.command() # Define a new click command.
 @click.option('--name', required=True, help="Name of game") # option need --, is the same that argument.
 @click.option('--genre', required=True, help="Genre of game")
 @click.option('--platform', required=True, help="Type of platform")
@@ -51,9 +51,9 @@ def game(name):
 def update(name, genre, platform, release_year):
     videogames = json_settings.read_json()
     for game in videogames:
-        if game['name'] == name:
+        if game['name'] == name: # comparing value "=="
             if name is not None:
-                game['name'] = name
+                game['name'] = name # assigning value "="
             if genre is not None:
                 game['genre'] = genre
             if platform is not None:
