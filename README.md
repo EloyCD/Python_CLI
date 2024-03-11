@@ -44,5 +44,57 @@ python cli.py videogames
 
 This command will show all the existing video games in our list.
 
+## Visualize a Game
+
+This command allows you to view the details of a specific game stored in the game list.
+
+```
+python cli.py game --name "Game Name"
+
+```
+
+### `Parameters:`
+
+--name: Specifies the name of the game for which you want to see the details.
+
+If the game is found in the list of video games, details such as name, genre, platform and year of release will be displayed. If the game is not found, a message will be printed indicating that the game was not found.
+
+## Updating a Game
+
+This command allows you to update the details of an existing game in the game list.
+
+```
+python cli.py update --name "Game Name" [--genre "Game Genre"] [--platform "Game Platform"] [--release_year "Release Year"]
+
+```
+
+### `Parameters:`
+
+--name: Specifies the name of the game to update.
+
+--genre: (Optional) The new genre of the game.
+
+--platform: (Optional) The new platform of the game.
+
+--release_year: (Optional) The new release year of the game.
+
+## Delete a Game
+
+This command allows you to remove a game from the list of video games.
+
+```
+python cli.py delete --name "Game Name"
+
+```
+### `Parameters:`
+
+--name: Especifica el nombre del juego que se desea eliminar.
+
+This command will remove the game from the list of video games, if the game is found in the list. If the game is not found, a message will be printed indicating that the game was not found.
+
+
+
+
+
 
 
