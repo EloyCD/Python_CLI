@@ -81,7 +81,7 @@ def delete(name):
        
 
                                                                 
-if __name__ == '__main__': # The code inside if __name__ == '__main__ will not be executed automatically.
+if __name__ == '__main__': # The code inside if __name__ == '__main__ will not be executed automatically in case of module import
     cli()
 
 
